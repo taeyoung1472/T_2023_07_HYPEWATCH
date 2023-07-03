@@ -1,11 +1,10 @@
 using Cinemachine;
-using System;
 using System.Collections;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] private CharacterMovementData movementData;
+    [SerializeField] private CharacterData movementData;
     [SerializeField] private float mouseSenservity;
     CharacterController controller;
     CinemachineVirtualCamera virtualCamera;
@@ -75,7 +74,7 @@ public class Character : MonoBehaviour
             }
         }
 
-        if(moveDir.y <= 0)
+        if (moveDir.y <= 0)
         {
             isFalling = true;
         }
