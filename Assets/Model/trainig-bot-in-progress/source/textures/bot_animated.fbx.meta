@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 6c13f845ec82e0a478ec3ae653c24798
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bot
+    second: {fileID: 2100000, guid: 61c161ee08b92094585d687bb9c43346, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vagon'
+    second: {fileID: 2100000, guid: 23ddcbb748e59ac4cb982057c26e58ca, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: bot_animated(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: -1.2821993, z: -0.08635818}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: corpus
+      parentName: Armature
+      position: {x: 6.770963e-20, y: 0.0003659245, z: -0.00030493707}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck
+      parentName: corpus
+      position: {x: -6.770963e-20, y: 0.030004643, z: 0.0041456306}
+      rotation: {x: -0.105581924, y: 0, z: -0, w: 0.99441063}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: neck
+      position: {x: -0, y: 0.009933762, z: -2.9802322e-10}
+      rotation: {x: 0.00012577455, y: 0.62849677, z: 0.7778122, w: -0.00015589882}
+      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+    - name: head_end
+      parentName: head
+      position: {x: -0, y: 0.009422636, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hip
+      parentName: corpus
+      position: {x: -0, y: 0, z: 3.7252902e-11}
+      rotation: {x: 0.70780504, y: -0.00000067368427, z: -0.0000006750168, w: 0.70640785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot
+      parentName: hip
+      position: {x: -0.000010679568, y: -0.000024009316, z: 0.010712229}
+      rotation: {x: -0.70780504, y: 0.0000006736648, z: 0.00000067499735, w: 0.70640785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: bot_end
+      parentName: bot
+      position: {x: -0, y: 0.006501652, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left_gun
+      parentName: corpus
+      position: {x: -0.016676182, y: 0.015400695, z: 0.00036592412}
+      rotation: {x: 0.99524295, y: -0.022583278, z: 0.022613222, w: 0.092033744}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: left_gun_end
+      parentName: left_gun
+      position: {x: -0, y: 0.0074925623, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_gun
+      parentName: corpus
+      position: {x: 0.016630387, y: 0.015400695, z: 0.00036592345}
+      rotation: {x: 0.995243, y: 0.022582792, z: -0.022632778, w: 0.09202782}
+      scale: {x: 1, y: 1, z: 1}
+    - name: right_gun_end
+      parentName: right_gun
+      position: {x: -0, y: 0.0074968026, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: left_gun
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: right_gun
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: neck
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: head
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: hip
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: bot
+      parentName: bot_animated(Clone)
+      position: {x: -0, y: 0, z: -0.086358175}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Cylinder.015
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.13129, z: -0.9452998}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.014
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.558688, z: -0.9452998}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.013
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.558688, z: -0.440324}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.012
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.13129, z: -0.440324}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.011
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.13129, z: 0.13621402}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.010
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.558688, z: 0.13621402}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.009
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.558688, z: 0.6558268}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    - name: Cylinder.008
+      parentName: bot_animated(Clone)
+      position: {x: -0.00107, y: -3.13129, z: 0.6558269}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 33.76752, y: 33.76752, z: 33.76752}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
