@@ -15,5 +15,36 @@ MonoBehaviour:
   weaponName: Default
   magAmount: 30
   damage: 10
-  attackDelay: 0.2
+  actually: 1
+  firePerBullet: 11
+  distanceDamage:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.98186463
+      outSlope: -0.98186463
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9792285
+      value: 0.03853017
+      inSlope: -0.98186463
+      outSlope: -0.98186463
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  attackDelay: 0.12
   reloadDelay: 1
+  attackClip:
+  - {fileID: 8300000, guid: 77acec704dcf10e4dab55274c59bfc57, type: 3}
+  - {fileID: 8300000, guid: 77acec704dcf10e4dab55274c59bfc57, type: 3}
+  attackCancel: {fileID: 0}
+  reloadClip: {fileID: 8300000, guid: 77acec704dcf10e4dab55274c59bfc57, type: 3}

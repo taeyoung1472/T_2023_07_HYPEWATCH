@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5bfe9cf9590cf641b9ff4f80fbbb241, type: 3}
   m_Name: DefaultCharacter
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 6
   jumpForce: 2.5
+  amplitude: 0.005
+  frequency: 20
+  footStepClip: {fileID: 8300000, guid: acc94e0d6b3137540955a6f094854f8d, type: 3}

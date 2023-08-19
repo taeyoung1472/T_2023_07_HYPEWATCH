@@ -3,6 +3,15 @@ using UnityEngine;
 public class WeaponController : MonoBehaviour
 {
     [SerializeField] private Weapon curWeapon;
+    public Weapon CurWeapon
+    {
+        get { return curWeapon; }
+        set
+        {
+            curWeapon = value;
+            UIManager.Instance.SetWeaponUI(curWeapon.WeaponData.weaponName);
+        }
+    }
     private bool canReadInput = true;
 
     public void Update()
@@ -14,20 +23,20 @@ public class WeaponController : MonoBehaviour
     {
         if (canReadInput)
         {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                curWeapon.Reload(() => canReadInput = true);
+                canReadInput = false;
+            }
+
             if (Input.GetKey(KeyCode.Mouse0))
             {
                 curWeapon.Attack(() => canReadInput = true, 0);
                 canReadInput = false;
             }
-            if (Input.GetKey(KeyCode.Mouse1))
+            else if (Input.GetKey(KeyCode.Mouse1))
             {
                 curWeapon.Attack(() => canReadInput = true, 1);
-                canReadInput = false;
-            }
-
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                curWeapon.Reload(() => canReadInput = true);
                 canReadInput = false;
             }
         }
