@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AiLocomotion : MonoBehaviour
+public class AILocomotion : MonoBehaviour
 {
     public Transform playerTransform;
     public float maxTime = 1.0f;
@@ -16,7 +16,7 @@ public class AiLocomotion : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
+        animator = transform.GetChild(0).GetComponent<Animator>();
     }
 
     void Update()
@@ -31,6 +31,6 @@ public class AiLocomotion : MonoBehaviour
             }
             timer = maxTime;
         }
-
+        animator.SetFloat("Speed", agent.velocity.magnitude);
     }
 }
