@@ -10433,8 +10433,6 @@ GameObject:
   m_Component:
   - component: {fileID: 279193024}
   - component: {fileID: 279193023}
-  - component: {fileID: 279193026}
-  - component: {fileID: 279193025}
   m_Layer: 10
   m_Name: PlayerCamera
   m_TagString: Untagged
@@ -10497,35 +10495,6 @@ Transform:
   m_Father: {fileID: 830082344}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &279193025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279193022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f549dec82bae574c855a42f2d10c7f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookSensitivity: 2
-  lookSmoothing: 2
---- !u!114 &279193026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279193022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f06c4b40aabdcd94dbd035b7bdd2378b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sensX: 20
-  sensY: 20
-  orientation: {fileID: 253931348}
 --- !u!1001 &280067112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30105,8 +30074,6 @@ GameObject:
   - component: {fileID: 830082344}
   - component: {fileID: 830082348}
   - component: {fileID: 830082351}
-  - component: {fileID: 830082350}
-  - component: {fileID: 830082349}
   m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
@@ -30156,35 +30123,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &830082349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830082343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f54471b303cd3448d7e907a6d2befc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dashForce: 50
-  dashDuration: 0.2
-  cam: {fileID: 279193023}
---- !u!114 &830082350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 830082343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a33d84215b349964d9e65c52f0be6d41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 4
-  jumpForce: 5
 --- !u!54 &830082351
 Rigidbody:
   m_ObjectHideFlags: 0
